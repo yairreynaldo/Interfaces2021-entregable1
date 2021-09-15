@@ -1,0 +1,33 @@
+body {
+    background-color: #f8c471;
+  }
+  
+  * {
+    color: black !important;
+  }
+  
+  option-menu {
+    flex-shrink: initial;
+  }
+  
+  .botons {
+    text-align: center;
+  }
+  
+  .btn {
+    text-align: center;
+    background-color: #ffdac1;
+    margin: 1%;
+    border-color: black;
+  }
+  
+  .btn:hover {
+    background-color: #ffb0c1;
+    border-color: white;
+  }
+  
+  .canvas {
+    background-color: whitesmoke;
+    border: 5px solid #fad7a0;
+    border-style: outset;
+  }

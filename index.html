@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENTREGABLE 1/Reynaldo Marano</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="container">
+    <div class="tools">
+        <h2>Herramientas</h2>
+            <a class="btn btn-primary" id="lapiz" value="selected">Lapiz</a>
+            <a class="btn btn-primary" id="goma" value="">Goma</a>
+
+            <p class="btn btn-primary">Grosor
+                <input type="range" min="1" max="50" value="30" id="slider-size">
+            </p>
+
+            <p class="btn btn-primary">Color
+                <input type="color" id="html5colorpicker" value="#FB8989">
+            </p>
+
+            <a class="btn btn-primary" download="imagen.png" id="download">Descargar</a>
+            <input class="input1" type="file" accept="image/*" style="display: none;">
+            <input
+            class="input1"
+            type="file"
+            accept="image/*"
+            style="display: none"
+          />
+          <button
+            class="btn btn-primary btntool"
+            id="addImg"
+            onclick="document.querySelector('.input1').click();"
+          >
+            Abrir imagen
+          </button>
+            <a class="btn btn-primary btntool" id="whiteCanvas">Limpiar canvas</a>
+    </div>
+
+    <div class="tablero">
+        <canvas id="canvas" class="canvas" height="680" width="800"></canvas>
+    </div>
+
+    <div class="filters">
+        <h2>Filtros</h2>
+        <a class="btn btn-primary" id="flt-sepia">Sepia</a>
+        <a class="btn btn-primary" id="flt-negativo">Negativo</a>
+        <a class="btn btn-primary" id="flt-greyScale">Escala de grises</a>
+        <a class="btn btn-primary" id="flt-binario">Binarización</a>
+        <a class="btn btn-primary" id="flt-blur">Blur</a>
+        <a class="btn btn-primary" id="flt-saturation"
+          >Saturacion<input
+            type="range"
+            min="1"
+            max="3"
+            value="1.2"
+            step="0.01"
+            id="saturation-value"
+          />
+        </a>
+      </div>
+    </div>
+</div>
+
+    <script src="js/canvas.js"></script>
+    <script src="js/picture.js"></script>
+</body>
+</html>

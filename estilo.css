@@ -1,0 +1,44 @@
+body {
+    background-color: blue;
+  }
+  
+  * {
+    color: black !important;
+  }
+  
+  
+  .botons {
+    text-align: center;
+  }
+  
+  .btn {
+    text-align: center;
+    background-color: #ffdac1;
+    margin: 1%;
+    border-color: black;
+  }
+  
+  .btn:hover {
+    background-color: #ffb0c1;
+    border-color: white;
+  }
+  
+  .canvas {
+    background-color: whitesmoke;
+    border: 5px solid #fad7a0;
+    border-style: outset;
+  }
+
+  .container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    margin-left: 8%;
+  }
+  
+  .tools,
+  .filters {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+  }
